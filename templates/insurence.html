@@ -1,0 +1,24 @@
+<html>
+<body>
+    <div class="login">
+       <h1>Heath insurence price prediction</h1>
+   
+        <!-- Main Input For Receiving Query to our ML -->
+       <form action="{{ url_for('predict_datapoint')}}" method="post">
+         <input type="text" name="age" placeholder="age" required="required" /><br>
+           <input type="text" name="bmi" placeholder="bmi" required="required" /><br>
+           <input type="text" name="children" placeholder="children" required="required" /><br>
+           <input type="text" name="region" placeholder="region" required="required" /><br>
+           <input type="text" name="sex_female" placeholder="sex_female" required="required" /><br>
+           <input type="text" name="sex_male" placeholder="sex_male" required="required" /><br>
+           <input type="text" name="smoker_no" placeholder="smoker_no" required="required" /><br>
+           <input type="text" name="smoker_yes" placeholder="smoker_yes" required="required" /><br>
+
+
+           <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+       </form>
+    <h2>
+       YOUR HEALTH INSURENCE PRICE IS {{result}}
+    </h2>
+   <body>
+</html>
