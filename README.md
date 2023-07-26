@@ -14,4 +14,4 @@ To access your flask application open new tab in and paste the url:
 ```
 https://{your_url}.pwskills.app:5000/
 ```
-# heart-attack-prediction
+# health-insurence-price-prediction
